@@ -45,7 +45,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
+.section-title {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
@@ -96,7 +96,7 @@ li :hover{
 /* main section style */
 main{
     max-width: 1440px;
-   margin: 0 auto; 
+   margin:0 auto; 
 }
 
 /* team features style */
@@ -105,6 +105,8 @@ main{
     display: flex;
     align-items: center;
     margin-top: 80px ;
+    margin-bottom: 150px;
+
 }
 .team-img-container{
     display: grid;
@@ -131,13 +133,58 @@ main{
     color:#727272 ;
     font-size: 16px;
     font-weight: 400;
-}
 
+}
+/* facts card style */
+   
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+   
+    
+}
+.fact-card-container .card-title{
+    color:#424242 ;
+    font-size: 20px; 
+    font-weight: 600; 
+    margin-top: 5px;
+}
+.fact-card-container .card{
+    border: 1px solid #FF900E ;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+}
+.fact-card-container .card-stats{
+   color:#424242 ;
+   font-weight:600 ; 
+   font-size: 45px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}
+/* sponsors style */
+.sponsors{
+    text-align: center;
+    margin-top: 180px;
+    
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 
 /* responsive website */
 /* small device */
 @media screen and (max-width:576px) {
-    nav, .team-container{
+    nav, .team-container, .fact-card-container, .sponsors-img-container{
         flex-direction: column;
         /* flex-direction: column-reverse; */
     }
@@ -147,16 +194,20 @@ main{
     .team-img-container{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content, .fact-card-container, .sponsors-img-container{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .fact-card-container, .sponsors-img-container{
+        gap: 10px;
+    }
+   
 }
 
 
 /* mediam device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav, .team-container{
+    nav, .team-container, .sponsors-img-container{
         flex-direction: column;
     }
     header{
