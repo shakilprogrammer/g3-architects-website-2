@@ -89,11 +89,45 @@ li :hover{
     height: 100%;
     margin-top: 20px;
 }
+/* main section style */
+main{
+    max-width: 1440px;
+   margin: 0 auto; 
+}
 
+/* team features style */
 
+.team-container{
+    display: flex;
+    align-items: center;
+    margin-top: 80px ;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 
-
-
+.team-title{
+    font-size: 2.8rem;
+}
+.team-title .quick-list{
+  color:#727272 ;  
+  font-weight: 500;
+}
+.Features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.team-description{
+    color:#727272 ;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 /* responsive website */
