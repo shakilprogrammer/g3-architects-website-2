@@ -162,6 +162,10 @@ main {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
+.features-img img{
+    height: 90%;
+    margin-left: 90px;
+}
 
 .ten-years-badge{
     border-radius: 8px;
@@ -169,12 +173,19 @@ main {
     width: 342px;
     color: #FFF;
     text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 130px;
     
 }
-.ten-years-badg h2{
+.ten-years-badge h2{
     font-size: 65px;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-align: center;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
 }
 /* facts card style */
 
@@ -228,6 +239,21 @@ main {
     width: 165px;
 }
 
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;  
+    margin: 0 240px;
+    text-align: center;
+    padding: 38px 400px;
+    margin-top: 170px ;
+}
+.footer-description{
+    
+    color: #424242;
+    font-weight: 400;  
+    font-size: 20px
+}
+
 /* responsive website */
 /* small device */
 @media screen and (max-width:576px) {
@@ -235,7 +261,7 @@ main {
     nav,
     .team-container,
     .fact-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container, .features {
         flex-direction: column;
         /* flex-direction: column-reverse; */
     }
@@ -250,7 +276,7 @@ main {
 
     .team-content,
     .fact-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container, .features {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -258,6 +284,20 @@ main {
     .fact-card-container,
     .sponsors-img-container {
         gap: 10px;
+    }
+    .features-img img{
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .ten-years-badge{
+        position: static;
+        max-width: 300px;
+    }
+    footer{
+        margin: 20px 10px;
+        padding:2px 5px;
+
     }
 
 }
@@ -268,11 +308,25 @@ main {
 
     nav,
     .team-container,
-    .sponsors-img-container {
+    .sponsors-img-container, .features {
         flex-direction: column;
     }
 
-    header {
+    header, .features {
         padding: 50px;
+    }
+    .features-img img{
+        width: 100%;
+        margin-left: 0;
+    
+    }
+    .ten-years-badge{
+        position: static;
+        width: 780px;
+    }
+    footer{
+        margin:0 10%;
+        padding: 5px;
+        margin-top: 50px;
     }
 }
